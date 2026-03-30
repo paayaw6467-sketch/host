@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Btech vs Godtech (PRO)</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="menu">
+<h1>⚔️ Btech vs Godtech (PRO)</h1>
+<p>The Ultimate Tic Tac Toe Boss Battle</p>
+<button onclick="startGame()">Enter Arena</button>
+</div>
+
+<div id="game">
+
+<div class="players">
+
+<div>
+<img class="avatar" src="https://i.pravatar.cc/100?img=1">
+<h3>Btech</h3>
+
+<div class="healthBar">
+<div id="playerHealth" class="health"></div>
+</div>
+
+</div>
+
+<div><h2>VS</h2></div>
+
+<div>
+<img class="avatar" src="https://i.pravatar.cc/100?img=12">
+<h3>Godtech (PRO)</h3>
+
+<div class="healthBar">
+<div id="bossHealth" class="health"></div>
+</div>
+
+</div>
+
+</div>
+
+<div id="status">Your Move</div>
+
+<div class="board" id="board">
+
+<div class="cell" data-i="0"></div>
+<div class="cell" data-i="1"></div>
+<div class="cell" data-i="2"></div>
+<div class="cell" data-i="3"></div>
+<div class="cell" data-i="4"></div>
+<div class="cell" data-i="5"></div>
+<div class="cell" data-i="6"></div>
+<div class="cell" data-i="7"></div>
+<div class="cell" data-i="8"></div>
+
+</div>
+
+<div class="score">
+🏆 Btech Wins: <span id="playerScore">0</span>  
+👑 Godtech Wins: <span id="bossScore">0</span>
+</div>
+
+<button onclick="restart()">Restart Battle</button>
+
+</div>
+
+<script src="ai.js"></script>
+<script src="ui.js"></script>
+<script src="game.js"></script>
+
+</body>
+</html>
